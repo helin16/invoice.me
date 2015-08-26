@@ -2,6 +2,14 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    meta(name="viewport",content="width=device-width, initial-scale=1")/
+    script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+  body(role="document")
+    include ./layouts/menu.jade
+    div(class="container main-content")
+      block content
+    include ./layouts/footer.jade
