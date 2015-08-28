@@ -9,4 +9,29 @@ nav(class="navbar navbar-inverse navbar-fixed-top")
         div(id="main_menu", class="navbar-collapse collapse")
             ul(class="nav navbar-nav")
                 li
-                    a(class="active", href="#") test
+                    a(class="dropdown-toggle", data-toggle="dropdown",href="#", role="button", aria-haspopup="true", aria-expanded="false")
+                        span(class="hidden-sm") Customers
+                        i(class="visible-sm-inline fa fa-users")
+                        span &nbsp;
+                        span(class="caret")
+                    ul(class="dropdown-menu")
+                        li
+                            a(href="#") Add Customer
+                        li
+                            a(href="#") View Customers
+                li
+                    a(class="dropdown-toggle", data-toggle="dropdown",href="#", role="button", aria-haspopup="true", aria-expanded="false")
+                        span(class="hidden-sm") Quotes / Invoices
+                        i(class="visible-sm-inline fa fa-file")
+                        span &nbsp;
+                        span(class="caret")
+                    ul(class="dropdown-menu")
+                        li
+                            a(href="#") Add Quote
+                        li
+                            a(href="#") View Quotes
+                        li(class="divider", role="separator")
+                        li
+                            a(href="#") Add Invoice
+                        li
+                            a(href="#") View Invoices

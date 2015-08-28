@@ -21,3 +21,11 @@ body {
 a {
 	color: #00B7FF;
 }
+
+.quick-actions .btn {
+	border: none;
+	border-right: 1px solid #ddd;
+}
+.quick-actions .btn:last-child {
+	border-right: none;
+}

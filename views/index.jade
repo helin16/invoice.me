@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome3 to #{title}
+    div(class="panel panel-default quick-actions")
+        div(class="panel-heading")
+            strong Quick Actions
+        div(class="btn-group btn-group-justified")
+            a(class="btn btn-default" href="#") test1
+            a(class="btn btn-default") test1
+            a(class="btn btn-default") test1
+
